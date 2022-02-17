@@ -1,0 +1,350 @@
+/* flower info section */
+.flower-info__section {
+    width: 100%;
+    display: grid;
+    grid-template: 80px 450px / 575px 574px;
+    grid-template-areas: 
+    "section-link section-link"
+    "flower-info__image flower-info__description";
+    row-gap: 10px;
+    column-gap: 50px;
+}
+
+.section-link {
+    /* border: 1px solid red; */
+    grid-area: section-link;
+    margin-top: 36px;
+}
+
+.section-link .homepage-link {
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+.homepage-link:nth-child(2), .homepage-link:nth-child(3) {
+    font-weight: 400;
+    color: #6d6d6d;
+}
+.flower-info__image {
+    /* border: 1px solid red; */
+    grid-area: flower-info__image;
+    display: grid;
+    grid-template: repeat(4, 137px) / 100px 444px;
+    grid-template-areas: 
+    "right left"
+    "right left"
+    "right left";
+    row-gap: 16px;
+    column-gap: 29px;
+}
+
+.right-imgs {
+    /* border: 1p   x solid red; */
+    grid-area: right;
+}
+
+.right-imgs img {
+    width: 100px;
+    height: 100px;
+    margin: 5px 0;
+    /* border: 1px solid black; */
+}
+
+
+.left-img {
+    width: 445px;
+    /* border: 1px solid red; */
+    grid-area: left;
+}
+
+.left-img img {
+    width: 440px;
+}
+.flower-info__description {
+    /* border: 1px solid red; */
+    grid-area: flower-info__description;
+}
+
+.blog-title {
+    color: #3d3d3d;
+}
+
+.price-blok {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 16px; */
+}
+
+.price-range {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.blog-endtitle {
+    font-size: 22px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #46a358;
+}
+
+.flower-info {
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height:150px; */
+}
+
+.color {
+    font-weight: 600;
+    color: #3d3d3d;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+.letters-blog {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.flower-info__size span {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #f0f0f0;
+    color: #6d6d6d;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.flower-info__size .active {
+    border: 1px solid #46a358;
+    color: #46a358;
+}
+
+.flower-info__size span:hover  {
+    border: 1px solid #46a358;
+    color: #46a358;
+}
+
+.flower-info__btns {
+    margin-top: 28px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flower-info__btns span {
+    width: 33px;
+    height: 38px;
+    background-color: #46a358;
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;align-items: center;
+    color:#fff;
+    font-size: 28px;
+    line-height: 16px;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+.flower-info__btns h2 {
+    font-size: 20px;
+    line-height: 10px;
+    font-weight: 500;
+    color: #6d6d6d;
+}
+
+.btn-transparent1 {
+    margin-left: -10px;
+    width: 130px;
+    height: 40px;
+    border: 1px solid #46a358;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #46a358;
+}
+
+.btn-transparent__link {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #46a358;
+}
+.btn-transparent {
+    margin-left: -10px;
+    width: 40px;
+    height: 37px;
+    border: 1px solid #46a358;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #46a358;
+    
+}
+
+.btn-transparent1:hover, .btn-transparent:hover {
+    background-color: #61c575;
+    color:#fff;
+}
+
+.btn-transparent1:hover .btn-transparent__link {
+    color: #fff;
+
+}
+
+.flower-info__addres {
+    margin-top: 25px;
+}
+
+.section-title span {
+    display: inline-block;
+    color: #555;
+    font-weight: 500
+}
+
+.flower-info__socials {
+    margin-top: -10px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.flower-info__link i {
+    margin-top: 10px;
+    width: 8px;
+    height: 8px;
+    color: #46a358;
+}
+
+/* flower info section */
+
+/* info section */
+.info-section {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.info-section__title {
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-title {
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 700;
+}
+
+.green {
+    color: #46a358;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+   background-color: #46a358;
+    color: red;
+}
+
+.info-section__content {
+    margin-top: 30px;
+}
+
+.info-heading {
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.info-section__products {
+    margin-top: 127px;
+}
+
+.product-heading {
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #46a358;
+}
+
+.gray {
+    background-color: #ddd;
+    margin-top: 12px;
+}
+
+.info-section__items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.info-image img {
+    margin-top: 56px;
+    width: 220px;
+    height: 255px;
+}
+
+.info-subtitle {
+    margin-top: 13px;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.info-title {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #46a358;
+}
+
+.slider-desc {
+    width: 4%;
+    height: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-desc span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #46a358;
+}
+
+.slider-desc span:nth-child(2) {
+    background-color: #46a358;
+}
